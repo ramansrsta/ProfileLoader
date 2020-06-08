@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Hub Profile Loader</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
+    <style>
+        .main{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <h1> Welcome to Profile Page of </h1>
+            <h1 id="profileName">  </h1>
+        </header>
+        <section>
+            <figure>
+                <img id="profileImage" src="" alt="Profile Image" height="100px" width="100px">
+            </figure>
+            <article style="margin: 20px;padding: 20px; text-align: justify;">
+               The image from above and the repository name below are retrieved using Github API.
+               This API allows to get lots of details about a username but only few are shown here.
+               Styling is done using Bootstrap. To get data fetch from JavaScript which returns a Promise.
+               A promise is either rejected or resloved upon resolving data is got which is show in the section 
+               below this.Projects are shown uder the My Projects section as required by the assignment.
+            </article>
+            <h3> My Projects </h3>
+            <div id="repo"> </div>
+        </section>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="app.js"> </script>
+</html>
